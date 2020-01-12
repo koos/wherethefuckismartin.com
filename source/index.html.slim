@@ -3,7 +3,7 @@ ul.c-places
     - daterange = !place.date.to.nil?
     li.c-places__item class="is--#{place.state}"
       .c-places__body
-        = link_to "#{place.city}, #{place.country}", place.url, class: "c-places__name", target: "_blank"
+        = link_to "#{place.city}, #{place.country}", place.url, class: "c-places__name"
         span.c-places__date 
           time date=place.date.from =place.date.from
           - if daterange
