@@ -2,8 +2,13 @@
   .o-row
     .o-col.is-left
       = link_to "Where<br>The&nbsp;Fuck<br>Is&nbsp;Jan&nbsp;Kus?", "http://wherethefuckisjankus.com", class: "c-brand"
-    .o-col.is-right
-      ul.c-list.is-right
+      ul.c-list.is-left
         li.c-item= "cities_0#{data.places.map(&:city).uniq.length}"
         li.c-item= "countries_0#{data.places.map(&:country).uniq.length}"
-        li.c-item continents_003
+        li.c-item continents_003      
+	.o-col.is-middle
+      = link_to "jan@kus.cologne", "mailto:jan@kus.cologne", class: "c-brand"      
+	.o-col.is-middle
+      = link_to "Railslove", "https://railslove.com", class: "c-brand"            
+    .o-col.is-right
+      = link_to "Who<br>The&nbsp;Fuck<br>Is&nbsp;Jan&nbsp;Kus?", "http://whothefuckisjankus.com", class: "c-brand"
